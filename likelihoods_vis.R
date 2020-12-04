@@ -86,7 +86,6 @@ index <- which.max(values_prod_lambda$y)
 values_prod_lambda[index, ]
 
 # Numerical Integration ---------------------------------------------------
-
 integrate(splinefun(y = values_prod_lambda$y, x = values_prod_lambda$x), 0, 10)
 integrate(approxfun(y = values_prod_lambda$y, x = values_prod_lambda$x), 0, 10)
 
